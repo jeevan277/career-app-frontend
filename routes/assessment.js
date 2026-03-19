@@ -84,7 +84,7 @@ function Assessment() {
     try {
       const token = localStorage.getItem('token');
       const res = await axios.post(
-        'http://localhost:5000/api/assessment/submit',
+        'https://career-app-ocuk.onrender.com/api/assessment/submit',
         { answers },
         { headers: { Authorization: `Bearer ${token}` } }
       );
